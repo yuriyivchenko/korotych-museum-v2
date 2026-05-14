@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Прототип віртуального музею вчителя для ліцею: вчителі, випуски, архів і дерево поколінь." />
+  <title>Музей v2</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="logo">
+      <img src="images/logo/logo1.png" data-route="home" alt="Логотип музею">
+    </div>
+    <div class="header-inner">
+      <h1>Музей вчителя</h1>
+      <span>Прототип цифрової пам’яті Коротичанського ліцею</span>
+    </div>
+    <div class="burger">☰</div>
+    <nav id="menu">
+      <button class="menu" data-route="home">Головна</button>
+      <button class="menu" data-route="walls">Стіни</button>
+      <button class="menu" data-route="stands">Стійки</button>
+      <button class="menu" data-route="archive">Архів</button>
+      <button class="menu" data-route="feedback">Відгуки</button>
+      <button class="menu" data-route="contact">Контакти</button>
+      <button class="menu" data-route="about">Про нас</button>
+    </nav>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="modal" class="modal" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <span onclick="closeModal()">✖</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+
+      <div class="footer-block">
+        <h3>Контакти</h3>
+        <p>📞 <a href="tel:+380577424993">+380 (57) 742-49-93</a></p>
+        <p>📧 <a href="mailto:korotich-lic@ukr.net">korotich-lic@ukr.net</a></p>
+      </div>
+
+      <div class="footer-block">
+        <h3>Адреса</h3>
+        <p>
+          Харківська область,<br>
+          Харківський район,<br>
+          селище Коротич,<br>
+          вул. Освіти, 59а
+        </p>
+      </div>
+
+      <div class="footer-block">
+        <h3>Орган управління</h3>
+        <p>
+          Відділ освіти, культури, молоді та спорту<br>
+          Пісочинської селищної ради
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Прототип віртуального музею вчителя. Демонстраційна модель для обговорення.</p>
+    </div>
+  </footer>
+
+
+  <script src="js/loader.js"></script>
+
+</body>
+
+</html>
